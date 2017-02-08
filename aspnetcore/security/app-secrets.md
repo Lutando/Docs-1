@@ -79,7 +79,8 @@ You can run the secret manager tool from other directories, but you must use the
 <!-- literal_block {"ids": [], "xml:space": "preserve"} -->
 
 ```
-dotnet user-secrets set MySecret ValueOfMySecret --project c:\work\WebApp1\src\webapp1
+dotnet user-secrets set MySecret ValueOfMySecret --project c:\work\WebApp1\s
+\webapp1
    ```
 
 You can also use the Secret Manager tool to list, remove and clear app secrets.
@@ -91,7 +92,7 @@ You access Secret Manager secrets through the configuration system. Add the `Mic
 <!-- literal_block {"ids": [], "linenos": false, "xml:space": "preserve", "language": "none", "highlight_args": {"hl_lines": [2]}} -->
 
 ```none
-  "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc2-final",
+  "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0",
    ```
 
 Add the user secrets configuration source to the `Startup` method:
